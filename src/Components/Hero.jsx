@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { Navbar } from './Navbar'
+import { Navbar } from '../Template/Navbar.jsx'
 import aa from '../img/aa.jpg'
 import aa2 from '../img/aa2.jpg'
 import aa3 from '../img/aa3.jpg'
@@ -41,6 +41,7 @@ export const Hero = () => {
       ))}
     </div>
     <div className='absolute w-full h-screen overflow-hidden'>
+      
       <Navbar />
       <div className='flex flex-col h-full justify-center items-start p-12 md:px-28 bg-secondary-30 bg-opacity-75 text-white'>
         <Reveal>
