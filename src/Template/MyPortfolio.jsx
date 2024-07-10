@@ -27,8 +27,8 @@ const portfolioItems = [
 const Portfolio = () => {
   return (
     <div className="min-h-screen bg-secondary-30 text-primary-60 flex flex-col items-center justify-center py-12">
-      <h1 className="text-4xl md:text-5xl font-bold mb-8">My Portfolio</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4">
+      <h1 className="text-4xl md:text-5xl font-bold mb-20">My Portfolio</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 bg-">
         {portfolioItems.map((item, index) => (
           <div key={index} className="bg-thirtary-10 p-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
             <img className="w-full h-32 object-cover rounded-t-lg" src={item.imageUrl} alt={item.title} />

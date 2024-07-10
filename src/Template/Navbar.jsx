@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { Link } from 'react-router-dom';
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
@@ -45,25 +46,25 @@ export const Navbar = () => {
             </div>
             <div className={nav ? 'fixed top-0 right-0 h-screen w-full py-20 bg-thirtary-10 bg-opacity-85 text-white -z-10 transition-all transform ease-in-out duration-700' : 'absolute top-0 right-[-100%] w-full  py-20 bg-thirtary-10 bg-opacity-85 text-white -z-10 transition-all transform ease-in-out duration-700'}>
                 <ul>
-                  <a href="">
+                  <Link to={"/"} onClick={() => setNav(false)}>
                     <li className='py-6 px-10 md:px-28 hover:shadow-2xl shadow-orange-200 transition-all ease-linear'>Home</li>
-                  </a>
+                    </Link>
                   <a href="">
                     <li className='py-6 px-10 md:px-28 hover:shadow-2xl shadow-orange-200 transition-all ease-linear'>About Us</li>
                   </a>
-                  <a href="">
+                  <a href="#education-area" onClick={() => setNav(false)}>
                     <li className='py-6 px-10 md:px-28 hover:shadow-2xl shadow-orange-200 transition-all ease-linear'>Education</li>
                   </a>
-                  <a href="">
+                  <a href="#skills-area" onClick={() => setNav(false)}>
                     <li className='py-6 px-10 md:px-28 hover:shadow-2xl shadow-orange-200 transition-all ease-linear'>Skills</li>
                   </a>
-                  <a href="">
+                  <Link to={"/Portfolios"} onClick={() => setNav(false)}>
                     <li className='py-6 px-10 md:px-28 hover:shadow-2xl shadow-orange-200 transition-all ease-linear'>Portfolio</li>
-                  </a>
-                  <a href="">
-                    <li className='py-6 px-10 md:px-28 hover:shadow-2xl shadow-orange-200 transition-all ease-linear'>Hire Me</li>
-                  </a>
-                  <a href="">
+                    </Link>
+                  <Link to={"/Blogs"} onClick={() => setNav(false)}>
+                    <li className='py-6 px-10 md:px-28 hover:shadow-2xl shadow-orange-200 transition-all ease-linear'>Blogs</li>
+                    </Link>
+                  <a href="#contactme-area" onClick={() => setNav(false)}>
                     <li className='py-6 px-10 md:px-28 hover:shadow-2xl shadow-orange-200 transition-all ease-linear'>Contact Me</li>
                   </a>
                 </ul>
@@ -74,3 +75,4 @@ export const Navbar = () => {
     </div>
   )
 }
+export default Navbar;

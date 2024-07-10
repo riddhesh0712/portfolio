@@ -23,7 +23,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='text-center py-4 md:py-10'>
+      <div className='text-center text-xs md:text-lg py-4 md:py-10'>
         <p>RIDDHESH © 2024. ALL RIGHTS RESERVED.</p>
       </div>
     </div>

@@ -36,7 +36,7 @@ export const Hero = () => {
           key={index}
           src={image}
           alt={`carousel-${index}`}
-          className={`absolute w-full h-full transition-opacity duration-1000 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
+          className={`absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
         />
       ))}
     </div>

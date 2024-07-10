@@ -32,14 +32,15 @@ const skills = [
   };
 export const SkillsComponent = () => {
   return (
-    <div className="py-16 bg-gray-900 flex items-center justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-20 w-full">
-            
-            {skills.map((skill, index) => (
-                
-                <SkillBar key={index} skill={skill} />
-            ))}
-        </div>
+    <div id='skills-area' className="min-h-screen py-16 bg-gray-900 flex flex-col md:flex-row items-center justify-center">
+      <div className='text-center py-10 px-20 text-primary-60'>
+        <h1 className='text-5xl font-bold'>Skills</h1>
+      </div>
+      <div className="grid grid-cols-1  gap-8 px-20 w-full">
+        {skills.map((skill, index) => (
+          <SkillBar key={index} skill={skill} />
+        ))}
+      </div>
     </div>
   )
 }

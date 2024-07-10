@@ -3,7 +3,7 @@ import { Button } from '../Template/Button';
 
 export const ContactMe = () => {
   return (
-    <section className='flex flex-col justify-center p-16 md:p-28 bg-secondary-30'>
+    <section id='contactme-area' className='flex flex-col justify-center p-16 md:p-28 bg-secondary-30'>
         <div>
              <div className='flex flex-col md:flex-row justify-around'>
                 <div class="wrap-input-1 relative w-full md:w-1/2 my-10 mx-3">

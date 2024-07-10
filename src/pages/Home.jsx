@@ -1,9 +1,7 @@
 import React from 'react'
-import { Navbar } from '../Template/Navbar.jsx'
 import { Hero } from '../Components/Hero.jsx'
 import { AboutMe } from '../Components/AboutMe.jsx'
 import { Education } from '../Components/Education.jsx'
-
 import HireMe from '../Components/HireMe.jsx'
 import ContactMe from '../Components/ContactMe.jsx'
 import Footer from '../Template/Footer.jsx';
@@ -25,3 +23,4 @@ export const Home = () => {
     </div>
   )
 }
+export default Home;
